@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Navbar */
+.container {
+  height: 70px;
+  box-shadow: 0px 0px 8px 3px rgb(228, 226, 226);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.container input {
+  width: 25%;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+  border-color: #027bff;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.container button {
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0px 10px 10px 0;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  margin-left: -5px;
+  outline: none;
+}
+
+/* Map */
+.map__container {
+  display: flex;
+  width: 75%;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+
+iframe{
+  width: 600px;
+  height: 500px;
+}
+/* Wather Info*/
+.wather__info {
+  height: 350px;
+  padding: 20px;
+  box-shadow: 1px 1px 8px 2px rgb(186, 186, 186);
+  border-radius: 10px;
+}
+
+/* For TV and Extra Large Screen*/
+@media screen and (min-device-width: 1201px) {
+  .container input {
+    width: 28%;
+  }
+  .map__container{
+    width: 85%;
+    justify-content: space-evenly;
+  }
+  iframe{
+    width: 550px;
+  }
+}
+
+/* For Large Screen and Desktop */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px){
+  .container input {
+    width: 30%;
+  }
+  .map__container{
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  iframe{
+    width: 500px;
+  }
+}
+
+/* For Laptop and Small Screen*/
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+  .container input {
+    width: 40%;
+  }
+  .map__container{
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  iframe{
+    width: 100%;
+  }
+}
+
+/* For ipads and Tablet View */
+@media screen and (max-device-width: 780px) {
+  .container input {
+    width: 40%;
+  }
+  .map__container{
+    width: 95%;
+  }
+  iframe{
+    width: 100%;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 680px) {
+  .container input {
+    width: 70%;
+  }
+  .map__container{
+    width: 90%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  iframe{
+    width: 100%;
+    height: 400px;
+  }
+}

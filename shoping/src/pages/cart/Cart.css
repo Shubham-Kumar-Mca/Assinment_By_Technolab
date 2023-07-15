@@ -1,0 +1,66 @@
+.total {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.total h1 {
+  width: 240px;
+}
+
+.noData__available {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.noData__available h2 {
+  margin-bottom: 2rem;
+}
+.noData__available a {
+  border: 1px solid teal;
+  font-size: 2rem;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+}
+
+
+
+/* For Large Screen and Desktop */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .total h1 {
+    width: 170px;
+  }
+}
+
+/* For Laptop and Small Screen*/
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .total h1 {
+    width: 170px;
+  }
+}
+
+/* For ipads and Tablet View */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+  .total h1 {
+    width: 170px;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px){
+  .total h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .noData__available a {
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+  }
+}

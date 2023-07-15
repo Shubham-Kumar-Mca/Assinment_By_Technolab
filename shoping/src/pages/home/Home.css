@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+  top: 7rem;
+  left: 0;
+}
+
+.prdoct-conatiner {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+/* For TV and Extra Large Screen*/
+@media screen and (min-device-width: 1201px) {
+  .prdoct-conatiner {
+    width: 90%;
+  }
+}
+/* For Large Screen and Desktop */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .prdoct-conatiner {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For Laptop and Small Screen*/
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .prdoct-conatiner {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For ipads and Tablet View */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .prdoct-conatiner {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) {
+  .container {
+    top: 8rem;
+  }
+  .prdoct-conatiner {
+    grid-template-columns: 1fr;
+  }
+}

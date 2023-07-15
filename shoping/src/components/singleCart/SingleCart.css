@@ -1,0 +1,144 @@
+.cart-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 20px 30px;
+  border-bottom: 5px solid green;
+}
+
+.cart-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.cart-section button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.cart-section input[type="number"] {
+  width: 50px;
+  outline: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.title {
+  width: 40%;
+}
+
+.title + div {
+  display: flex;
+  align-items: center;
+  width: 11%;
+  gap: 1rem;
+}
+
+
+/* For Large Screen and Desktop */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .cart-section {
+    width: 90%;
+  }
+}
+
+/* For Laptop and Small Screen*/
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .cart-section {
+    width: 90%;
+  }
+  .cart-section img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+  }
+  .cart-section input[type="number"] {
+    width: 40px;
+    padding: 5px;
+  }
+  
+  .title {
+    width: 25%;
+  }
+  .title + div {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    gap: .5rem;
+    margin-left: .5rem;
+  }
+}
+
+/* For ipads and Tablet View */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .cart-section {
+    width: 85%;
+    padding: 20px;
+    border-bottom: 5px solid green;
+  }
+  .cart-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  .cart-section input[type="number"] {
+    width: 30px;
+    padding: 2px;
+  }
+
+  .cart-section button {
+    padding: 10px;
+    background-color: #db3545;
+  }
+
+  .title + div + h4{
+    margin-left: 2.2rem;
+  }
+  
+  .title{
+    display: none;
+  }
+}
+
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px){
+  .cart-section {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .cart-section img {
+    width: 120px;
+    height: 120px;
+  }
+  .cart-section input[type="number"] {
+    width: 70px;
+    padding: 5px;
+  }
+  .title + div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  .cart-section button {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .title{
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}

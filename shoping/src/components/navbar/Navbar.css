@@ -1,0 +1,108 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: white;
+  box-shadow: 0 1px 2px 0px rgb(206, 206, 206);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-container a {
+  font-size: 2rem;
+  color: black;
+}
+
+.navbar-container svg {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.cartIcon span {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -10px;
+  left: 15px;
+  background-color: orange;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* For Large Screen and Desktop **/
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .navbar-container {
+    padding: 1rem 3.5rem;
+  }
+  .navbar-container a {
+    font-size: 1.8rem;
+  }
+  .navbar-container svg {
+    font-size: 1.8rem;
+  }
+  .cartIcon span {
+    padding: 0.8rem;
+  }
+}
+
+/* For Laptop and Small Screen*/
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .navbar-container {
+    padding: 1rem 2.5rem;
+  }
+  .navbar-container a {
+    font-size: 1.7rem;
+  }
+  .navbar-container svg {
+    font-size: 1.7rem;
+  }
+  .cartIcon span {
+    padding: 0.5rem;
+  }
+}
+
+/* For ipads and Tablet View */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .navbar-container {
+    padding: 1rem 2rem;
+  }
+  .navbar-container a {
+    font-size: 1.5rem;
+  }
+  .navbar-container svg {
+    font-size: 1.5rem;
+  }
+  .cartIcon span {
+    padding: 0.5rem;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) {
+  .navbar-container {
+    padding: 1rem 1.5rem;
+  }
+  .navbar-container a {
+    font-size: 1.3rem;
+  }
+  .navbar-container svg {
+    font-size: 1.5rem;
+  }
+  .cartIcon span {
+    padding: 0.5rem;
+  }
+}

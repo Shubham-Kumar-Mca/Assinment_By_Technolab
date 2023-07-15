@@ -1,0 +1,56 @@
+.singleProduct-container{
+    background-color: #fff;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 1px 3px rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.singleProduct-container div img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+.des{
+    height: 100px;
+    padding: .5rem 1rem;
+    /* margin-bottom: .5rem; */
+}
+
+.singleProduct-container{
+    padding: .5rem 1rem;
+}
+
+.singleProduct-container p{
+    color: #666;
+}
+
+.singleProduct-container p span{
+    font-weight: 700;
+    color: black;
+}
+.singleProduct-container h3{
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
+    font-size: 15px;
+    color: #003380;
+    height: 3em;
+    line-height: 1.4em;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+.singleProduct-container button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: green;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
